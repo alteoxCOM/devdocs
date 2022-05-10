@@ -33,7 +33,8 @@ ETL uses PostgreSQL to store the data it gets from the blockchain in an easily q
 If you don't have PostgreSQL already installed and running, we'll need to install it:
 
 ```bash
-$ sudo apt-get install postgresql
+$ sudo apt-get install postgresql-12 postgresql-client-12 postgis postgresql-12-postgis-3 postgresql-12-postgis-3-scripts
+
 ```
 
 We'll need to setup a new user and database for ETL to use. If you already have a user and know the credentials, you can skip this. Create a user called `etl` and give them superuser powers:
